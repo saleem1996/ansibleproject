@@ -1,0 +1,8 @@
+---
+ - hosts: slave2
+   become: true
+   tasks:
+     - name: installing unzip
+       yum:
+         name: unzip
+         state: installed
