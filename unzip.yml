@@ -4,6 +4,6 @@
    tasks:
      - name: installing files
        yum:
-         name: unzip,git
+         name: unzip
          state: installed
  
