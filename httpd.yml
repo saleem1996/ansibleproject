@@ -2,9 +2,9 @@
  - hosts: slave2
    become: true
    tasks: 
-     -yum:
+     - yum:
         name: httpd
         state: installed
-     -service:
+     - service:
         name: httpd
         state: started
