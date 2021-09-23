@@ -1,0 +1,7 @@
+---
+ - hosts: slave2
+   become: true
+   tasks:
+     - yum:
+         name: wget
+         state: installed
